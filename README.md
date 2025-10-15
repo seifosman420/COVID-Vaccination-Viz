@@ -96,54 +96,6 @@ SG: Addressing Global Vaccine Inequality
 │       ├── Task 2: Identify economic impacts
 │       └── Task 3: Recommend policy interventions
 ```
-
-### 3.3 Data Selection and Preparation
-
-**Raw Data Elements:**
-- Country name and income classification
-- Date/timestamp of vaccination data
-- Population vaccinated (at least one dose)
-- Total doses administered per 100 people
-- Vaccine type and manufacturer (where applicable)
-
-**Data Hierarchies:**
-- Geographic: Country → Income Group → Global
-- Temporal: Date → Month → Quarter → Year
-- Vaccination status: Unvaccinated → Partially vaccinated → Fully vaccinated → Boosted
-
-**Filters Identified:**
-- Income group selector
-- Date range filter
-- Country selector
-- Vaccination metric (percentage vs. doses per capita)
-
-### 3.4 Design Principles Applied
-
-Following established data storytelling principles:
-
-**1. Strategic Use of "Ink"**
-- Every visual element serves a purpose
-- Removed unnecessary gridlines, labels, and decorations
-- Focused on data-to-ink ratio optimization
-
-**2. Color Psychology**
-- **Blue:** Trust, stability (high-income countries, positive outcomes)
-- **Red:** Urgency, concern (low-income countries, critical disparities)
-- **Yellow/Orange:** Caution, middle ground (middle-income countries)
-- Consistent color mapping throughout all visualizations
-
-**3. Text and Typography**
-- Sans serif fonts for clarity
-- Key message in titles: "The Vaccine Divide" immediately communicates the story
-- Emphasis through size and weight, not decoration
-- Data labels only where necessary for interpretation
-
-**4. Narrative Flow**
-- Left-to-right, top-to-bottom organization (Western reading pattern)
-- Progressive disclosure: overview → detail → implications
-- Each visualization builds upon previous insights
-- Clear transitions between analytical tasks
-
 ---
 
 ## 4. Data Analysis and Findings
