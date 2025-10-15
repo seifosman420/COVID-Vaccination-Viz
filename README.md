@@ -41,7 +41,7 @@ This analysis utilizes vaccination data patterns consistent with Our World in Da
 
 ### 2.3 The Need for Storytelling
 
-Traditional dashboards often present data without sufficient context, leading to misinterpretation. For instance, knowing that "Paper glued to the plate (press): 11.19%" represents a defect rate tells us little about its overall production impact. Similarly, vaccination statistics require contextual framing to understand their implications for global health equity, variant emergence, and pandemic control.
+Traditional dashboards often present data without sufficient context, leading to misinterpretation. For instance, knowing that a defect affects "11.19%" of products tells us little about its overall production impact without understanding what percentage of total production experiences defects. Similarly, vaccination statistics require contextual framing to understand their implications for global health equity, variant emergence, and pandemic control.
 
 ---
 
@@ -133,7 +133,7 @@ Following established data storytelling principles:
 - Consistent color mapping throughout all visualizations
 
 **3. Text and Typography**
-- Sans serif fonts for clarity (system defaults)
+- Sans serif fonts for clarity
 - Key message in titles: "The Vaccine Divide" immediately communicates the story
 - Emphasis through size and weight, not decoration
 - Data labels only where necessary for interpretation
@@ -150,6 +150,10 @@ Following established data storytelling principles:
 
 ### 4.1 Vaccination Coverage by Income Level
 
+**Visualization Reference:** Figure 1 - Coverage by Income Group
+
+![Figure 1: Vaccination Coverage by Income Level](Image 1)
+
 **Key Finding:** A 4-fold disparity exists between high-income and low-income countries in vaccination coverage.
 
 **Evidence:**
@@ -158,51 +162,116 @@ Following established data storytelling principles:
 - Lower-middle income: 42.1% population vaccinated
 - Low-income countries: 18.4% population vaccinated
 
-**Interpretation:** This gradient clearly demonstrates that vaccine access correlates strongly with national income. The gap between high-income and low-income countries (56.9 percentage points) represents millions of individuals without access to life-saving vaccines.
+**Interpretation:** This gradient clearly demonstrates that vaccine access correlates strongly with national income. The gap between high-income and low-income countries (56.9 percentage points) represents millions of individuals without access to life-saving vaccines. As shown in Figure 1, only high-income and upper-middle-income countries surpassed the WHO target of 70% coverage.
 
-**Visualization Strategy:** A stacked bar chart with color-coded income groups immediately communicates the disparity. The use of red for low coverage values draws attention to the crisis in low-income nations.
+**Visualization Strategy:** The bar chart uses color-coded income groups to immediately communicate the disparity. The use of red for low coverage values draws attention to the crisis in low-income nations, while the reference line at 70% (WHO target) provides critical context for evaluating each group's performance.
 
 ### 4.2 Temporal Evolution of the Vaccine Gap
+
+**Visualization Reference:** Figure 2 - Timeline Comparison & Figure 5 - Gap Evolution
+
+![Figure 2: The Vaccine Gap Widened Over Time](Image 2)
 
 **Key Finding:** Rather than converging over time, the vaccination gap between high-income and low-income countries widened significantly during the first 18 months of vaccine rollout.
 
 **Evidence:**
-- December 2020: Minimal difference (0.2% vs 0%)
-- June 2021: Gap of 41.8 percentage points (42.3% vs 0.5%)
-- December 2021: Gap of 66.6 percentage points (72.8% vs 6.2%)
-- June 2022: Gap of 62.1 percentage points (80.5% vs 18.4%)
+- December 2020: Minimal difference (0.2% vs 0%) - 0.2 pp gap
+- March 2021: Early acceleration (15.8% vs 0.1%) - 15.7 pp gap
+- June 2021: Rapid divergence (42.3% vs 0.5%) - 41.8 pp gap
+- September 2021: Continued widening (61.5% vs 1.8%) - 59.7 pp gap
+- December 2021: **Peak inequality** (72.8% vs 6.2%) - **66.6 pp gap**
+- March 2022: Slight narrowing (78.1% vs 14.7%) - 63.4 pp gap
+- June 2022: Sustained disparity (80.5% vs 18.4%) - 62.1 pp gap
 
 **Interpretation:** High-income countries rapidly accelerated vaccination through advance purchase agreements and strong healthcare infrastructure. Low-income countries experienced slow initial progress due to supply constraints, only seeing meaningful acceleration in 2022 through COVAX and bilateral agreements.
 
-**Critical Insight:** The gap peaked at the end of 2021, a period when new variants (Delta, Omicron) emerged, highlighting the connection between unequal vaccine distribution and pandemic prolongation.
+![Figure 5: The Growing Vaccine Gap](Image 5)
 
-**Visualization Strategy:** Dual-line chart with diverging trajectories emphasizes the growing disparity. The stark visual separation between blue (high-income) and red (low-income) lines reinforces the narrative.
+**Critical Insight:** As illustrated in Figure 5, the gap peaked at the end of 2021 (66.6 percentage points), a period when new variants (Delta, Omicron) emerged, highlighting the connection between unequal vaccine distribution and pandemic prolongation. The area chart visualization powerfully emphasizes the magnitude and persistence of this inequality.
+
+**Visualization Strategy:** The dual-line chart (Figure 2) with diverging trajectories emphasizes the growing disparity. The stark visual separation between blue (high-income) and red (low-income) lines reinforces the narrative. The shaded area between the lines visually represents the "gap" that decision-makers need to address. Figure 5 complements this by showing the gap itself as the primary metric, making the inequality even more explicit.
 
 ### 4.3 Country-Level Disparities
+
+**Visualization Reference:** Figure 3 - Country Comparison
+
+![Figure 3: Dramatic Disparities in Vaccine Dose Administration](Image 3)
 
 **Key Finding:** When accounting for booster doses, disparities become even more extreme, with some countries administering 13 times more doses per capita than others.
 
 **Evidence:**
-- UAE: 254 doses per 100 people
-- China: 234 doses per 100 people
-- UK: 228 doses per 100 people
-- USA: 187 doses per 100 people
-- India: 152 doses per 100 people
-- Indonesia: 148 doses per 100 people
-- Nigeria: 28 doses per 100 people
-- Ethiopia: 19 doses per 100 people
+- **High-Income Countries:**
+  - UAE: 254 doses per 100 people
+  - UK: 228 doses per 100 people
+  - USA: 187 doses per 100 people
+- **Middle-Income Countries:**
+  - China: 234 doses per 100 people (Upper-Middle)
+  - India: 152 doses per 100 people (Lower-Middle)
+  - Indonesia: 148 doses per 100 people (Lower-Middle)
+  - Nigeria: 28 doses per 100 people (Lower-Middle)
+- **Low-Income Countries:**
+  - Ethiopia: 19 doses per 100 people
 
-**Interpretation:** While initial dose disparities were concerning, the inclusion of booster programs in wealthy nations further widened the gap. Countries like UAE administered enough doses to fully vaccinate their populations twice over and provide multiple boosters, while Ethiopia could barely provide initial coverage.
+**Interpretation:** While initial dose disparities were concerning, the inclusion of booster programs in wealthy nations further widened the gap. Countries like UAE administered enough doses to fully vaccinate their populations twice over and provide multiple boosters, while Ethiopia could barely provide initial coverage. The 13× difference between UAE (254) and Ethiopia (19) represents an extreme manifestation of global health inequality.
 
-**Population Context:** 
-- High-income countries (1.2 billion people): High coverage
-- Low-income countries (700 million people): Minimal coverage
+**Population Context (Visualization Reference: Figure 4):** 
 
-Despite representing a smaller population, high-income nations consumed disproportionately more vaccine supply.
+![Figure 4: Vaccination Coverage vs Population Size](Image 4)
 
-**Visualization Strategy:** Horizontal bar chart ordered by doses per capita makes comparisons immediate and intuitive. Color coding by income group reveals systematic patterns rather than isolated cases.
+Figure 4 reveals an important pattern: lower-middle-income countries represent the largest population group (3,200 million people with 42.1% coverage), meaning the majority of undervaccinated individuals reside in these nations. This bubble chart visualization shows that larger populations in middle-income categories have significantly lower vaccination rates, creating a massive global vulnerability.
 
-### 4.4 Implications and Consequences
+**Visualization Strategy:** The horizontal bar chart (Figure 3) ordered by doses per capita makes comparisons immediate and intuitive. Color coding by income group reveals systematic patterns rather than isolated cases. Figure 4's scatter plot with bubble sizes proportional to population provides essential context about the scale of the inequality—it's not just about percentages, but about billions of people.
+
+### 4.4 Global Distribution Analysis
+
+**Visualization Reference:** Figure 6 - Distribution Pie Charts
+
+![Figure 6: Global Population and Vaccination Distribution](Image 6)
+
+**Key Finding:** The distribution of vaccinated individuals does not align with population distribution, revealing systematic inequality.
+
+**Evidence from Figure 6:**
+
+**Left Chart - Population Distribution:**
+- Lower-Middle Income: 40.5% of global population
+- Upper-Middle Income: 35.4% of global population
+- High Income: 15.2% of global population
+- Low Income: 8.9% of global population
+
+**Right Chart - Vaccinated Population Distribution:**
+- Upper-Middle Income: 44.8% of vaccinated individuals
+- Lower-Middle Income: 31.3% of vaccinated individuals
+- High Income: 21.0% of vaccinated individuals
+- Low Income: 3.0% of vaccinated individuals
+
+**Interpretation:** Low-income countries represent 8.9% of the global population but only 3.0% of vaccinated individuals—a nearly 3× underrepresentation. Conversely, high-income countries represent 15.2% of population but 21.0% of vaccinated individuals—a 1.4× overrepresentation. This visualization powerfully demonstrates how vaccine access does not correlate with population need.
+
+### 4.5 Comprehensive Dashboard Overview
+
+**Visualization Reference:** Figure 7 - Comprehensive Dashboard
+
+![Figure 7: COVID-19 Vaccination Inequality - A Comprehensive Overview](Image 7)
+
+Figure 7 presents an integrated dashboard that follows the storytelling methodology principles:
+
+**Top Section:** Provides the headline finding (4× coverage gap) with immediate visual impact
+**Middle Section:** Shows temporal evolution, allowing viewers to see how the gap developed
+**Bottom Section:** Breaks down specific country examples and key insights
+
+**Dashboard Design Principles Applied:**
+1. **Progressive disclosure:** Start with big picture, then detail
+2. **Consistent color scheme:** Blue=high income, Red=low income throughout
+3. **Strategic placement:** Most important information in top-left (Western reading pattern)
+4. **Key insights box:** Text summary ensures message clarity even for quick viewers
+5. **Multiple chart types:** Each visualization type chosen for optimal communication of specific insights
+
+**Key Insights Highlighted in Dashboard:**
+- 75% vs 18% coverage (High vs Low income)
+- Gap peaked at 66.6 pp in Dec 2021
+- 13× difference in doses (UAE vs Ethiopia)
+- 4.7B people in lower-income groups with limited access
+
+### 4.6 Implications and Consequences
 
 **Health Consequences:**
 - Unvaccinated populations became reservoirs for viral replication
@@ -230,9 +299,11 @@ Despite representing a smaller population, high-income nations consumed dispropo
 
 Traditional vaccination dashboards often present statistics in isolation: "75% vaccinated" or "19 doses per 100 people." While technically accurate, these figures lack the narrative context necessary for understanding their significance. Our storytelling approach provides:
 
-**Contextual Understanding:** Each visualization is positioned within an analytical flow that mimics decision-maker thought processes. Users first see the overall disparity, then understand how it developed over time, before examining specific country examples and finally considering implications.
+**Contextual Understanding:** Each visualization is positioned within an analytical flow that mimics decision-maker thought processes. As demonstrated in Figure 7's comprehensive dashboard, users first see the overall disparity (top section), then understand how it developed over time (middle section), before examining specific country examples (bottom section) and finally considering implications.
 
-**Cognitive Alignment:** By structuring visualizations according to the mental model derived from analytical requirements, users can naturally progress from question to insight without cognitive friction.
+**Cognitive Alignment:** By structuring visualizations according to the mental model derived from analytical requirements, users can naturally progress from question to insight without cognitive friction. The progression from Figure 1 (what is the gap?) → Figure 2 (how did it evolve?) → Figure 3 (what are specific examples?) → Figures 4-6 (what does this mean at scale?) creates a natural learning journey.
+
+**Visual Hierarchy and Color Consistency:** Throughout all seven visualizations, we maintain consistent color coding (blue=high income, red=low income, yellow=middle income), enabling viewers to build and reinforce their understanding across multiple charts without relearning visual encoding.
 
 **Actionable Insights:** The narrative concludes with clear implications and pathways forward, moving beyond descriptive statistics to prescriptive recommendations.
 
@@ -246,38 +317,85 @@ A traditional dashboard might display:
 While factually correct, this approach obscures the inequality story. A user might conclude that vaccination efforts are succeeding globally, missing the critical disparity between income groups.
 
 Our storytelling dashboard explicitly highlights:
-- The 4-fold coverage gap between income groups
-- The widening temporal gap during critical pandemic phases
-- The extreme disparities when including booster doses
+- The 4-fold coverage gap between income groups (Figure 1)
+- The widening temporal gap during critical pandemic phases (Figures 2 & 5)
+- The extreme disparities when including booster doses (Figure 3)
+- The population-scale implications (Figures 4 & 6)
 - The consequences of inequality for global health security
+
+**Example of Enhanced Understanding:**
+- **Traditional approach:** "Global vaccination: 58.2%" → suggests moderate success
+- **Storytelling approach:** Figure 7 shows that 4.7B people in lower-income groups have limited access despite high overall numbers → reveals critical inequality requiring urgent action
 
 ### 5.3 Design Decisions and Trade-offs
 
-**Simplification vs. Comprehensiveness:** We prioritized narrative clarity over exhaustive data presentation. Some country-level details were aggregated into income groups, potentially obscuring within-group variations. However, this trade-off enables users to grasp the primary story without overwhelming complexity.
+**Simplification vs. Comprehensiveness:** We prioritized narrative clarity over exhaustive data presentation. Some country-level details were aggregated into income groups, potentially obscuring within-group variations. However, this trade-off enables users to grasp the primary story without overwhelming complexity. Figure 3 balances this by showing selected country examples that represent the diversity within income groups.
 
-**Sequential vs. Parallel Presentation:** The dashboard uses a sequential flow (overview → timeline → examples → implications) rather than presenting all information simultaneously. This guides users through a logical progression but limits their ability to make non-sequential comparisons.
+**Sequential vs. Parallel Presentation:** The dashboard uses a sequential flow (overview → timeline → examples → implications) rather than presenting all information simultaneously. This guides users through a logical progression but limits their ability to make non-sequential comparisons. Figure 7's comprehensive dashboard addresses this by presenting multiple views simultaneously for users who want to see connections across different analytical dimensions.
 
-**Static vs. Interactive Elements:** While the current implementation includes filtering and drill-down capabilities, the core narrative remains fixed. This ensures consistent message delivery but may not accommodate all user exploration needs.
+**Color Strategy:** The consistent use of red for low-income/concerning values and blue for high-income/positive values follows established conventions. However, we recognize this could be perceived as assigning blame to low-income countries rather than highlighting structural inequalities. We mitigated this through careful title wording (e.g., "Dramatic Disparities" rather than "Poor Performance") and contextual explanations.
 
-### 5.4 Limitations and Future Directions
+**Chart Type Selection:**
+- **Bar charts (Figures 1, 3, 7):** Optimal for comparing discrete categories
+- **Line charts (Figures 2, 7):** Best for showing trends over continuous time
+- **Area chart (Figure 5):** Emphasizes magnitude of gap as a unified concept
+- **Scatter plot (Figure 4):** Reveals relationships between multiple dimensions
+- **Pie charts (Figure 6):** Shows part-to-whole relationships for distribution comparison
+
+### 5.4 Validation Against Storytelling Principles
+
+Our visualizations adhere to the data storytelling principles from the methodology lecture:
+
+**1. Identifying the Story:**
+- ✓ Clear narrative: 4-fold disparity with widening gap
+- ✓ Turning point identified: Gap peaked December 2021
+- ✓ Relationship shown: Income directly correlates with vaccine access
+
+**2. Audience Awareness:**
+- ✓ Tailored for policymakers and public health officials
+- ✓ Appropriate detail level for decision-making
+- ✓ Clear "why should they care" message throughout
+
+**3. Strategic Design:**
+- ✓ Every color, line, and element has purpose
+- ✓ Minimal clutter (no unnecessary gridlines or decorations)
+- ✓ Key message in titles (e.g., "A 4-Fold Disparity in Global Vaccine Access")
+
+**4. Color Usage:**
+- ✓ Consistent palette across all visualizations
+- ✓ Strategic use of red for urgency/concern
+- ✓ Blue for stability/positive (when appropriate)
+- ✓ Neutral gray for reference elements
+
+**5. Text and Titles:**
+- ✓ Sans serif fonts throughout
+- ✓ Key takeaway in title, not buried in legend
+- ✓ Annotations highlight critical insights (e.g., "Gap widens to 66.6 pp")
+
+### 5.5 Limitations and Future Directions
 
 **Data Limitations:**
 - Income classification is categorical and may obscure within-group heterogeneity
 - Vaccination metrics don't capture vaccine effectiveness variations
 - Missing data on vaccine hesitancy and demand-side barriers
 - Limited environmental and policy context data
+- No data on vaccine equity within countries (urban vs rural, wealthy vs poor regions)
 
 **Methodological Considerations:**
 - Requirements were defined based on public health expert consensus; different stakeholder groups might prioritize different analytical goals
 - Color choices follow Western cultural norms; adaptations may be needed for different audiences
 - The narrative assumes a policy-advocacy audience; scientific or general public audiences might require different framings
+- Static visualizations capture a moment in time; real-time dashboards would require different design considerations
 
 **Future Enhancements:**
 - Integration of vaccine effectiveness data to show impact disparities
-- Incorporation of variant emergence timelines
-- Connection to economic and social outcome data
+- Incorporation of variant emergence timelines overlaid on vaccination data
+- Connection to economic and social outcome data (GDP impact, school closures, etc.)
 - Predictive modeling for future pandemic scenarios
 - Expanded geographic drill-down capabilities
+- Interactive dashboard version allowing user exploration while maintaining narrative structure
+- Inclusion of vaccine production capacity and supply chain data
+- Analysis of within-country inequalities
 
 ---
 
@@ -287,52 +405,75 @@ Our storytelling dashboard explicitly highlights:
 
 **1. Vaccine Production Expansion**
 - Increase manufacturing capacity in low and middle-income countries
-- Technology transfer agreements to enable local production
+- Technology transfer agreements to enable local production (mRNA vaccine technology)
 - Remove intellectual property barriers through TRIPS waiver implementation
+- Support for quality control and regulatory capacity building
+
+**Evidence from Analysis:** Figure 3 shows that even middle-income countries like India and Indonesia, despite having large pharmaceutical sectors, administered far fewer doses per capita than high-income nations. Local production capacity could help close this gap.
 
 **2. Distribution Infrastructure**
 - Strengthen cold chain logistics in low-income countries
 - Invest in last-mile delivery systems
 - Train healthcare workers for mass vaccination campaigns
+- Address infrastructure gaps identified during COVID-19 rollout
+
+**Evidence from Analysis:** Figure 2 shows that low-income countries' vaccination rates remained near zero for the first six months (Dec 2020 - Jun 2021), indicating not just supply problems but also distribution challenges.
 
 **3. Financial Support**
 - Fully fund COVAX and similar multilateral initiatives
 - Provide grants rather than loans for vaccine procurement
 - Compensate manufacturers fairly while ensuring affordability
+- Establish pandemic preparedness funds for future crises
+
+**Evidence from Analysis:** Figure 6 shows that low-income countries (8.9% of global population) received only 3.0% of vaccines, suggesting systematic underfunding and under-prioritization.
 
 ### 6.2 Systemic Changes
 
 **1. Global Health Architecture Reform**
 - Establish pandemic preparedness treaty with equity provisions
-- Create regional vaccine manufacturing hubs
+- Create regional vaccine manufacturing hubs (African Union, ASEAN, etc.)
 - Develop rapid response mechanisms for future outbreaks
+- Strengthen WHO capacity for vaccine allocation coordination
 
 **2. Research and Development Priorities**
 - Invest in vaccines suitable for low-resource settings (temperature-stable, single-dose)
 - Support research institutions in low and middle-income countries
 - Ensure equitable clinical trial participation
+- Develop platform technologies for rapid vaccine development
 
 **3. Data and Monitoring**
 - Improve real-time vaccination data collection globally
 - Establish equity indicators as key performance metrics
 - Create early warning systems for distribution inequalities
+- Mandate transparency in vaccine purchase agreements
+
+**Evidence from Analysis:** The comprehensive dashboard (Figure 7) provides a model for what real-time equity monitoring could look like, enabling rapid identification of emerging disparities.
 
 ### 6.3 Communication Strategies
 
 **For Policymakers:**
 - Emphasize national security implications of global vaccine inequality
-- Highlight economic costs of prolonged pandemic
+- Highlight economic costs of prolonged pandemic (Figure 2 shows extended timeline in low-income countries)
 - Demonstrate political benefits of international solidarity
+- Use Figure 7's dashboard format for policy briefings
 
 **For International Organizations:**
 - Frame equity as a global public good
-- Use data stories to mobilize resource commitments
+- Use data stories (like Figures 1-7) to mobilize resource commitments
 - Document success stories of equitable distribution
+- Hold member states accountable for equity commitments
 
 **For Civil Society:**
-- Build public awareness of global disparities
+- Build public awareness of global disparities using accessible visualizations
 - Advocate for policy changes using evidence-based narratives
 - Hold governments and organizations accountable for equity commitments
+- Use Figure 1's simple bar chart for public education campaigns
+
+**For Media:**
+- Provide context beyond country-level statistics
+- Use Figure 5's gap visualization to show persistent inequality
+- Connect vaccine inequality to variant emergence and pandemic duration
+- Humanize statistics through country examples (Figure 3)
 
 ---
 
@@ -342,19 +483,63 @@ This report demonstrates the power of systematic data storytelling to communicat
 
 **Key Contributions:**
 
-1. **Methodological Framework:** We applied a systematic approach to data storytelling that begins with stakeholder requirements and guides design decisions through implementation.
+1. **Methodological Framework:** We applied a systematic approach to data storytelling that begins with stakeholder requirements and guides design decisions through implementation, ensuring alignment between analytical goals and visual communication.
 
-2. **Empirical Evidence:** The analysis revealed a 4-fold vaccination coverage gap between high-income and low-income countries, which widened during the critical first 18 months of vaccine rollout.
+2. **Empirical Evidence:** The analysis revealed a 4-fold vaccination coverage gap between high-income and low-income countries, which widened during the critical first 18 months of vaccine rollout, peaking at 66.6 percentage points in December 2021.
 
-3. **Design Principles:** We demonstrated how color psychology, strategic use of visual elements, and narrative flow create more effective data communication than traditional dashboards.
+3. **Visualization Suite:** We created seven complementary visualizations (Figures 1-7) that work together to tell a coherent story:
+   - **Figure 1:** Establishes the magnitude of disparity
+   - **Figure 2:** Shows temporal evolution
+   - **Figure 3:** Provides concrete country examples
+   - **Figure 4:** Reveals population-scale implications
+   - **Figure 5:** Emphasizes the growing gap
+   - **Figure 6:** Exposes distribution inequalities
+   - **Figure 7:** Integrates all insights into actionable dashboard
 
-4. **Policy Insights:** The storytelling approach enabled clear articulation of not just what happened, but why it matters and what should be done.
+4. **Design Principles:** We demonstrated how color psychology, strategic use of visual elements, consistent formatting, and narrative flow create more effective data communication than traditional dashboards. The 4× disparity is not just stated but visually experienced through color contrast, chart proportions, and progressive revelation.
 
-**The Central Message:** "No one is safe until everyone is safe" is not merely a slogan but a data-driven reality. Vaccine inequality prolonged the pandemic, enabled variant emergence, and deepened global divisions. Future pandemic preparedness must prioritize equity from the outset, with monitoring systems that detect and address disparities in real-time.
+5. **Policy Insights:** The storytelling approach enabled clear articulation of not just what happened (disparities exist), but why it matters (variant emergence, economic costs, mortality impacts) and what should be done (production expansion, infrastructure investment, systemic reform).
 
-**Broader Implications:** The methodology presented here extends beyond COVID-19 vaccination to any domain requiring data-driven decision-making. By aligning visualizations with user mental models and crafting coherent narratives, organizations can improve data interpretation, reduce misinterpretations, and enhance decision-making outcomes.
+**The Central Message:** "No one is safe until everyone is safe" is not merely a slogan but a data-driven reality demonstrated across all seven visualizations. Vaccine inequality prolonged the pandemic (Figure 2), enabled variant emergence, deepened global divisions (Figure 6), and created a 13-fold disparity in protection levels (Figure 3). Future pandemic preparedness must prioritize equity from the outset, with monitoring systems that detect and address disparities in real-time.
 
-As we face future global health challenges, the ability to transform data into actionable stories will be critical for mobilizing resources, building political will, and achieving equitable outcomes. This report provides a blueprint for how data storytelling can serve as a catalyst for positive change.
+**Validation of Storytelling Methodology:**
+
+Comparing our approach to traditional dashboards reveals significant advantages:
+
+| Aspect | Traditional Dashboard | Our Storytelling Dashboard |
+|--------|---------------------|---------------------------|
+| **Primary Metric** | "Global vaccination: 58.2%" | "4-fold gap between income groups" |
+| **Interpretation** | Suggests moderate success | Reveals critical inequality |
+| **Temporal Context** | Current snapshot only | Evolution over 18 months (Figure 2) |
+| **Scale Understanding** | Percentages only | Population impacts (Figure 4, 6) |
+| **Actionability** | Unclear implications | Specific policy recommendations |
+| **Visual Coherence** | Disconnected charts | Narrative flow (Figures 1→7) |
+
+**Broader Implications:** The methodology presented here extends beyond COVID-19 vaccination to any domain requiring data-driven decision-making. Key principles demonstrated:
+
+1. **Requirements-driven design:** Start with stakeholder goals, not available data
+2. **Mental model alignment:** Structure visualizations to match how decision-makers think
+3. **Progressive disclosure:** Build understanding incrementally
+4. **Consistent visual language:** Enable pattern recognition across visualizations
+5. **Context provision:** Never present data in isolation
+6. **Actionable insights:** Connect evidence to decisions
+
+**Application Domains:**
+- Climate change communication (emissions gaps between nations)
+- Educational equity (achievement gaps across socioeconomic groups)
+- Healthcare access (treatment disparities by income/geography)
+- Economic development (wealth distribution patterns)
+- Any field requiring evidence-based policy advocacy
+
+**Final Reflection:**
+
+As we face future global health challenges—whether new pandemics, antimicrobial resistance, or non-communicable disease epidemics—the ability to transform data into actionable stories will be critical for mobilizing resources, building political will, and achieving equitable outcomes. 
+
+The COVID-19 vaccination inequality story, as told through Figures 1-7, serves as both a cautionary tale and a blueprint for improvement. It shows what happens when global systems fail to prioritize equity (Figures 2, 5), but also demonstrates how clear data communication can drive understanding and action.
+
+This report provides a replicable methodology for how data storytelling can serve as a catalyst for positive change. By making inequality visible, quantified, and contextualized, we create the foundation for more equitable policies and more just global health outcomes.
+
+The 4.7 billion people in lower-income groups with limited vaccine access (highlighted in Figure 7) are not just statistics—they represent a moral imperative and a practical necessity for global health security. Future efforts must ensure that data storytelling capabilities are built into pandemic response systems from the start, enabling real-time equity monitoring and rapid corrective action.
 
 ---
 
@@ -370,78 +555,42 @@ As we face future global health challenges, the ability to transform data into a
 - Kosara, R., & Mackinlay, J. (2013). Storytelling: The next step for visualization. *Computer, 46*(5), 44-50.
 - Lavalle, A., et al. (2025). A methodology for the systematic design of storytelling dashboards applied to Industry 4.0. *Data & Knowledge Engineering, 156*, 102410.
 - Segel, E., & Heer, J. (2010). Narrative visualization: Telling stories with data. *IEEE Transactions on Visualization and Computer Graphics, 16*(6), 1139-1148.
+- Maté, A., Trujillo, J., & Franch, X. (2014). Adding semantic modules to improve goal-oriented analysis of data warehouses using I-star. *Journal of Systems and Software, 88*, 102-111.
+
+**Data Visualization Principles:**
+- Few, S. (2012). *Show Me the Numbers: Designing Tables and Graphs to Enlighten*. Analytics Press.
+- Tufte, E. R. (2001). *The Visual Display of Quantitative Information*. Graphics Press.
+- Cairo, A. (2016). *The Truthful Art: Data, Charts, and Maps for Communication*. New Riders.
 
 **Context and Background:**
 - International Monetary Fund (2021). *Global Economic Impact of COVID-19*
 - World Health Organization (2022). *COVID-19 Vaccine Equity*
 - COVAX Facility (2021-2022). *Distribution Reports*
+- The Lancet (2021). *Global COVID-19 Vaccine Inequity*
 
 ---
 
-## Appendix A: Data Tables
+## Appendix A: Visualization Index
 
-### Table A1: Vaccination Coverage by Income Group (June 2022)
+All visualizations referenced in this report:
 
-| Income Group | % Vaccinated (≥1 dose) | Population (millions) | Doses per 100 people |
-|--------------|----------------------|---------------------|---------------------|
-| High Income | 75.3% | 1,200 | 228 |
-| Upper-Middle Income | 68.9% | 2,800 | 203 |
-| Lower-Middle Income | 42.1% | 3,200 | 118 |
-| Low Income | 18.4% | 700 | 24 |
+**Figure 1:** COVID-19 Vaccination Coverage by Income Level - A 4-Fold Disparity in Global Vaccine Access
+- **Type:** Vertical bar chart
+- **Purpose:** Establish magnitude of coverage disparity
+- **Key Insight:** 75.3% (high) vs 18.4% (low) = 4-fold gap
+- **Section Reference:** 4.1
 
-### Table A2: Vaccination Progress Timeline
+**Figure 2:** The Vaccine Gap Widened Over Time - High-Income vs Low-Income Countries (Dec 2020 - Jun 2022)
+- **Type:** Dual-line chart with shaded area
+- **Purpose:** Show temporal evolution of gap
+- **Key Insight:** Gap peaked at 66.6 percentage points in December 2021
+- **Section Reference:** 4.2
 
-| Period | High-Income Coverage | Low-Income Coverage | Gap |
-|--------|---------------------|-------------------|-----|
-| Dec 2020 | 0.2% | 0% | 0.2 pp |
-| Mar 2021 | 15.8% | 0.1% | 15.7 pp |
-| Jun 2021 | 42.3% | 0.5% | 41.8 pp |
-| Sep 2021 | 61.5% | 1.8% | 59.7 pp |
-| Dec 2021 | 72.8% | 6.2% | 66.6 pp |
-| Mar 2022 | 78.1% | 14.7% | 63.4 pp |
-| Jun 2022 | 80.5% | 18.4% | 62.1 pp |
+**Figure 3:** Dramatic Disparities in Vaccine Dose Administration - Selected Countries (Including Boosters)
+- **Type:** Horizontal bar chart
+- **Purpose:** Provide concrete country examples
+- **Key Insight:** 13× difference between UAE (254) and Ethiopia (19)
+- **Section Reference:** 4.3
 
-### Table A3: Selected Country Examples
-
-| Country | Income Level | Doses per 100 people | Population Vaccinated |
-|---------|--------------|---------------------|---------------------|
-| UAE | High | 254 | >90% |
-| China | Upper-Middle | 234 | 88% |
-| UK | High | 228 | 79% |
-| USA | High | 187 | 78% |
-| India | Lower-Middle | 152 | 62% |
-| Indonesia | Lower-Middle | 148 | 59% |
-| Nigeria | Lower-Middle | 28 | 19% |
-| Ethiopia | Low | 19 | 13% |
-
----
-
-## Appendix B: Visualization Design Specifications
-
-### Color Palette
-- **High-Income/Positive:** #2563eb (Blue-600)
-- **Upper-Middle:** #60a5fa (Blue-400)
-- **Lower-Middle:** #fbbf24 (Yellow-400)
-- **Low-Income/Critical:** #ef4444 (Red-500)
-- **Neutral/Background:** #94a3b8 (Slate-400)
-
-### Typography
-- **Headlines:** System default, Bold, 24-32pt
-- **Subheads:** System default, Semibold, 18-20pt
-- **Body text:** System default, Regular, 14-16pt
-- **Data labels:** System default, Medium, 12-14pt
-
-### Chart Types Rationale
-- **Stacked Bar Chart (Coverage by Income):** Enables part-to-whole comparison while showing absolute values
-- **Line Chart (Timeline):** Best for showing trends over continuous time periods
-- **Horizontal Bar Chart (Country Comparison):** Facilitates name-to-value matching for many categories
-
----
-
-**Report Prepared:** October 2025  
-**Version:** 1.0  
-**Contact:** Data Visualization Research Group
-
----
-
-*This report applies data storytelling principles from academic research in information visualization to communicate global health equity issues. All visualizations and analyses are designed to support evidence-based policy decisions while maintaining scientific rigor and narrative clarity.*
+**Figure 4:** Vaccination Coverage vs Population Size - Lower Coverage in Larger Populations
+- **Type:** Scatter plot with
