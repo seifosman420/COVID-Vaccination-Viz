@@ -152,7 +152,7 @@ Following established data storytelling principles:
 
 **Visualization Reference:** Figure 1 - Coverage by Income Group
 
-![Figure 1: Vaccination Coverage by Income Level](Image 1)
+![Figure 1: Vaccination Coverage by Income Level](./01_coverage_by_income.png)
 
 **Key Finding:** A 4-fold disparity exists between high-income and low-income countries in vaccination coverage.
 
@@ -170,7 +170,7 @@ Following established data storytelling principles:
 
 **Visualization Reference:** Figure 2 - Timeline Comparison & Figure 5 - Gap Evolution
 
-![Figure 2: The Vaccine Gap Widened Over Time](Image 2)
+![Figure 2: The Vaccine Gap Widened Over Time](./02_timeline_comparison.png)
 
 **Key Finding:** Rather than converging over time, the vaccination gap between high-income and low-income countries widened significantly during the first 18 months of vaccine rollout.
 
@@ -185,7 +185,7 @@ Following established data storytelling principles:
 
 **Interpretation:** High-income countries rapidly accelerated vaccination through advance purchase agreements and strong healthcare infrastructure. Low-income countries experienced slow initial progress due to supply constraints, only seeing meaningful acceleration in 2022 through COVAX and bilateral agreements.
 
-![Figure 5: The Growing Vaccine Gap](Image 5)
+![Figure 5: The Growing Vaccine Gap](./05_gap_evolution.png)
 
 **Critical Insight:** As illustrated in Figure 5, the gap peaked at the end of 2021 (66.6 percentage points), a period when new variants (Delta, Omicron) emerged, highlighting the connection between unequal vaccine distribution and pandemic prolongation. The area chart visualization powerfully emphasizes the magnitude and persistence of this inequality.
 
@@ -195,7 +195,7 @@ Following established data storytelling principles:
 
 **Visualization Reference:** Figure 3 - Country Comparison
 
-![Figure 3: Dramatic Disparities in Vaccine Dose Administration](Image 3)
+![Figure 3: Dramatic Disparities in Vaccine Dose Administration](./03_country_comparison.png)
 
 **Key Finding:** When accounting for booster doses, disparities become even more extreme, with some countries administering 13 times more doses per capita than others.
 
@@ -216,7 +216,7 @@ Following established data storytelling principles:
 
 **Population Context (Visualization Reference: Figure 4):** 
 
-![Figure 4: Vaccination Coverage vs Population Size](Image 4)
+![Figure 4: Vaccination Coverage vs Population Size](./04_population_coverage.png)
 
 Figure 4 reveals an important pattern: lower-middle-income countries represent the largest population group (3,200 million people with 42.1% coverage), meaning the majority of undervaccinated individuals reside in these nations. This bubble chart visualization shows that larger populations in middle-income categories have significantly lower vaccination rates, creating a massive global vulnerability.
 
@@ -226,7 +226,7 @@ Figure 4 reveals an important pattern: lower-middle-income countries represent t
 
 **Visualization Reference:** Figure 6 - Distribution Pie Charts
 
-![Figure 6: Global Population and Vaccination Distribution](Image 6)
+![Figure 6: Global Population and Vaccination Distribution](./06_distribution_pies.png)
 
 **Key Finding:** The distribution of vaccinated individuals does not align with population distribution, revealing systematic inequality.
 
@@ -250,7 +250,7 @@ Figure 4 reveals an important pattern: lower-middle-income countries represent t
 
 **Visualization Reference:** Figure 7 - Comprehensive Dashboard
 
-![Figure 7: COVID-19 Vaccination Inequality - A Comprehensive Overview](Image 7)
+![Figure 7: COVID-19 Vaccination Inequality - A Comprehensive Overview](./07_dashboard_summary.png)
 
 Figure 7 presents an integrated dashboard that follows the storytelling methodology principles:
 
@@ -567,30 +567,3 @@ The 4.7 billion people in lower-income groups with limited vaccine access (highl
 - World Health Organization (2022). *COVID-19 Vaccine Equity*
 - COVAX Facility (2021-2022). *Distribution Reports*
 - The Lancet (2021). *Global COVID-19 Vaccine Inequity*
-
----
-
-## Appendix A: Visualization Index
-
-All visualizations referenced in this report:
-
-**Figure 1:** COVID-19 Vaccination Coverage by Income Level - A 4-Fold Disparity in Global Vaccine Access
-- **Type:** Vertical bar chart
-- **Purpose:** Establish magnitude of coverage disparity
-- **Key Insight:** 75.3% (high) vs 18.4% (low) = 4-fold gap
-- **Section Reference:** 4.1
-
-**Figure 2:** The Vaccine Gap Widened Over Time - High-Income vs Low-Income Countries (Dec 2020 - Jun 2022)
-- **Type:** Dual-line chart with shaded area
-- **Purpose:** Show temporal evolution of gap
-- **Key Insight:** Gap peaked at 66.6 percentage points in December 2021
-- **Section Reference:** 4.2
-
-**Figure 3:** Dramatic Disparities in Vaccine Dose Administration - Selected Countries (Including Boosters)
-- **Type:** Horizontal bar chart
-- **Purpose:** Provide concrete country examples
-- **Key Insight:** 13× difference between UAE (254) and Ethiopia (19)
-- **Section Reference:** 4.3
-
-**Figure 4:** Vaccination Coverage vs Population Size - Lower Coverage in Larger Populations
-- **Type:** Scatter plot with
